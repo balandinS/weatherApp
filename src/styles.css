@@ -1,0 +1,147 @@
+body {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.header {
+  margin: 0;
+  height: 200px;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  line-height: 200px;
+  letter-spacing: 4px;
+  background: #000428; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #004e92,
+    #000428
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #004e92,
+    #000428
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #ecf0f1;
+  box-shadow: 2px 2px 2px 2px #535c68;
+}
+.main {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  width: 100%;
+}
+.form {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.form label {
+  font-weight: 700;
+  padding-right: 20px;
+  font-size: 1.5rem;
+}
+.form input {
+  border: transparent;
+  outline: none;
+  padding: 10px;
+  border-bottom: 2px solid #2980b9;
+  margin-right: 20px;
+  font-size: 1.3rem;
+}
+.form input:focus {
+  border-bottom: 2px solid #4834d4;
+}
+.form .valid {
+  background-color: rgba(235, 77, 75, 0.2);
+  border-bottom: 2px solid rgba(235, 77, 75, 1);
+}
+.form button {
+  height: 45px;
+  width: 180px;
+  padding: 10px;
+  border-radius: 3px;
+  outline: none;
+  background-color: transparent;
+  border: 2px solid #2980b9;
+  color: #2980b9;
+  font-size: 1.2rem;
+  transition: 0.8s linear;
+}
+.form button:hover {
+  font-weight: bolder;
+  border: 2px solid #4834d4;
+  background-color: #4834d4;
+  color: white;
+}
+#loading {
+  display: none;
+  border: 5px solid black;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: auto;
+  border-right: 5px solid red;
+  animation-name: loading;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.weather {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
+  padding: 30px;
+  text-align: cener;
+  width: 25%;
+  box-shadow: 4px 2px 2px 2px #535c68;
+  border-radius: 5px;
+}
+
+.weather h2 {
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+  font-weight: bolder;
+}
+
+.container-result {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.text-color {
+  color: #7f8c8d;
+}
+@keyframes loading {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 835px) {
+  .header {
+    font-size: 70%;
+  }
+}
+
+@media (max-width: 835px) {
+  .header {
+    font-size: 70%;
+  }
+}

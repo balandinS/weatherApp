@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <link href="./src/styles.css" rel="styles" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <header class="header">
+      <h1>the super awesome app weather app</h1>
+    </header>
+    <div class="main">
+      <div id="search" class="search">
+        <div class="form">
+          <label for="input_nameCity">City Name</label>
+          <input id="city" id="input_nameCity" type="text" autocomplete="off" />
+          <button>Show Weather</button>
+        </div>
+      </div>
+      <div id="loading"></div>
+      <div class="weather" id="weather">
+        <h2 id="weatherCity">City Name</h2>
+        <div class="container-result">
+          <div class="text-color" id="weatherDescription">
+            Weather Description
+          </div>
+          <div class="text-color" id="weatherTemperature">
+            Weather Temperature
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
